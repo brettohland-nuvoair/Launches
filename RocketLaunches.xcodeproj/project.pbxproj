@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3552512F29A7FA8200172BDF /* LaunchKitUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3552512E29A7FA8200172BDF /* LaunchKitUI */; };
 		97006D6429A7CDD300C69853 /* RocketLaunchesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D6329A7CDD300C69853 /* RocketLaunchesApp.swift */; };
 		97006D6829A7CDD400C69853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006D6729A7CDD400C69853 /* Assets.xcassets */; };
 		97006D6B29A7CDD400C69853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006D6A29A7CDD400C69853 /* Preview Assets.xcassets */; };
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3552512F29A7FA8200172BDF /* LaunchKitUI in Frameworks */,
 				97006D9029A7CE1600C69853 /* LaunchKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +142,7 @@
 			name = RocketLaunches;
 			packageProductDependencies = (
 				97006D8F29A7CE1600C69853 /* LaunchKit */,
+				3552512E29A7FA8200172BDF /* LaunchKitUI */,
 			);
 			productName = RocketLaunches;
 			productReference = 97006D6029A7CDD300C69853 /* RocketLaunches.app */;
@@ -586,6 +589,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3552512E29A7FA8200172BDF /* LaunchKitUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LaunchKitUI;
+		};
 		97006D8F29A7CE1600C69853 /* LaunchKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LaunchKit;
