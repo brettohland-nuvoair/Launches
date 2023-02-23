@@ -30,7 +30,7 @@ let package = Package(
         ),
         .target(
             name: "LaunchKitUI",
-            dependencies: []
+            dependencies: ["LaunchKit"]
         ),
         .testTarget(
             name: "LaunchKitTests",
