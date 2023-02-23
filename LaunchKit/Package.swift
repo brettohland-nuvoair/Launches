@@ -1,3 +1,4 @@
+
 // swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
@@ -10,13 +11,8 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "LaunchKit",
-            targets: [
-                "LaunchKit",
-                "LaunchKitUI",
-            ]
-        ),
+        .library(name: "LaunchKit", targets: ["LaunchKit"]),
+        .library(name: "LaunchKitUI", targets: ["LaunchKitUI"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,7 +25,7 @@ let package = Package(
             name: "LaunchKit",
             dependencies: [],
             exclude: [
-                "NetworkingService/ExampleJSON/"
+                "LaunchLibraryService/ExampleJSON/"
             ]
         ),
         .target(
