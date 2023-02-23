@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		97006D6429A7CDD300C69853 /* RocketLaunchesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D6329A7CDD300C69853 /* RocketLaunchesApp.swift */; };
-		97006D6629A7CDD300C69853 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D6529A7CDD300C69853 /* ContentView.swift */; };
 		97006D6829A7CDD400C69853 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006D6729A7CDD400C69853 /* Assets.xcassets */; };
 		97006D6B29A7CDD400C69853 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97006D6A29A7CDD400C69853 /* Preview Assets.xcassets */; };
 		97006D7529A7CDD400C69853 /* RocketLaunchesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D7429A7CDD400C69853 /* RocketLaunchesTests.swift */; };
 		97006D7F29A7CDD400C69853 /* RocketLaunchesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D7E29A7CDD400C69853 /* RocketLaunchesUITests.swift */; };
 		97006D8129A7CDD400C69853 /* RocketLaunchesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97006D8029A7CDD400C69853 /* RocketLaunchesUITestsLaunchTests.swift */; };
+		97006D9029A7CE1600C69853 /* LaunchKit in Frameworks */ = {isa = PBXBuildFile; productRef = 97006D8F29A7CE1600C69853 /* LaunchKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		97006D6029A7CDD300C69853 /* RocketLaunches.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketLaunches.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97006D6329A7CDD300C69853 /* RocketLaunchesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchesApp.swift; sourceTree = "<group>"; };
-		97006D6529A7CDD300C69853 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97006D6729A7CDD400C69853 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97006D6A29A7CDD400C69853 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97006D7029A7CDD400C69853 /* RocketLaunchesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketLaunchesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		97006D7A29A7CDD400C69853 /* RocketLaunchesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketLaunchesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97006D7E29A7CDD400C69853 /* RocketLaunchesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchesUITests.swift; sourceTree = "<group>"; };
 		97006D8029A7CDD400C69853 /* RocketLaunchesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97006D8D29A7CDFA00C69853 /* LaunchKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = LaunchKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97006D9029A7CE1600C69853 /* LaunchKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +75,12 @@
 		97006D5729A7CDD300C69853 = {
 			isa = PBXGroup;
 			children = (
+				97006D8D29A7CDFA00C69853 /* LaunchKit */,
 				97006D6229A7CDD300C69853 /* RocketLaunches */,
 				97006D7329A7CDD400C69853 /* RocketLaunchesTests */,
 				97006D7D29A7CDD400C69853 /* RocketLaunchesUITests */,
 				97006D6129A7CDD300C69853 /* Products */,
+				97006D8E29A7CE1200C69853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				97006D6329A7CDD300C69853 /* RocketLaunchesApp.swift */,
-				97006D6529A7CDD300C69853 /* ContentView.swift */,
 				97006D6729A7CDD400C69853 /* Assets.xcassets */,
 				97006D6929A7CDD400C69853 /* Preview Content */,
 			);
@@ -127,6 +129,13 @@
 			path = RocketLaunchesUITests;
 			sourceTree = "<group>";
 		};
+		97006D8E29A7CE1200C69853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +152,9 @@
 			dependencies = (
 			);
 			name = RocketLaunches;
+			packageProductDependencies = (
+				97006D8F29A7CE1600C69853 /* LaunchKit */,
+			);
 			productName = RocketLaunches;
 			productReference = 97006D6029A7CDD300C69853 /* RocketLaunches.app */;
 			productType = "com.apple.product-type.application";
@@ -257,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97006D6629A7CDD300C69853 /* ContentView.swift in Sources */,
 				97006D6429A7CDD300C69853 /* RocketLaunchesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +443,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuvoair.RocketLaunches;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,6 +475,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuvoair.RocketLaunches;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -583,6 +600,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97006D8F29A7CE1600C69853 /* LaunchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LaunchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 97006D5829A7CDD300C69853 /* Project object */;
 }
