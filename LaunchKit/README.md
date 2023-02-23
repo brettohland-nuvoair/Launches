@@ -16,7 +16,7 @@ Contains all of the SwiftUI view logic to display the UI to the user
 
 The API is The Space Dev's Launch Library 2: https://thespacedevs.com/llapi
 
-The endpoint to use will be `/launch/`: https://ll.thespacedevs.com/2.2.0/launch/
-In JSON format: https://ll.thespacedevs.com/2.2.0/launch/?format=json
+The endpoint to use will be `/launch/upcoming`: https://ll.thespacedevs.com/2.2.0/launch/upcoming/
+In JSON format: https://ll.thespacedevs.com/2.2.0/launch/upcoming/?format=json
 
 An example of the response can be found inside of the LaunchKit Swift Package as LaunchList.json
