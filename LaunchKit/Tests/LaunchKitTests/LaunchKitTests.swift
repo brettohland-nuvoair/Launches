@@ -1,5 +1,5 @@
-import XCTest
 @testable import LaunchKit
+import XCTest
 
 final class LaunchKitTests: XCTestCase {
     func testExample() throws {
